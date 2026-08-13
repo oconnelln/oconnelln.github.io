@@ -1,0 +1,321 @@
+* {
+    margin: 0px;
+}
+html {
+    background-color:#101010;
+    overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+/*Nav menu
+    nav {
+        display: flex;
+        background-color: #BEB2C8;
+        text-align: center;
+        align-content: center;
+        font-size: 175%;
+    }
+    nav li {
+        list-style-type: none;
+        font-weight: bold;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        margin-left: 3rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: .5rem;
+        float: right;
+        
+    }
+    nav a:hover {
+        color: black;
+    }
+    nav ul {
+        justify-content: center;
+        padding: 0px;
+        display: flex;
+    }
+    nav h2 {
+        float: left;
+    }*/
+main {
+    background-color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    max-width: 1000px;
+    display: flex;
+}
+.emptyl {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: white;
+}
+.emptyr {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: white;
+}
+p {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+    line-height: 1.4;
+}
+p a {
+  color: #330358;
+  background-color: #dfbaff46;
+}
+h3 a {
+  color: #330358;
+  background-color: #dfbaff46;
+}
+li a {
+  color: #330358;
+  background-color: #dfbaff46;
+}
+p a:visited {
+  color: #330358bb 
+}
+p a:focus {
+  background-color: #DFBAFF;
+}
+address {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-left: 1rem;
+}
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 1rem;
+    color: black;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    background-color: #101010;
+    color: white;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    /*border-top: black .25rem solid;*/
+    margin-top: 3rem;
+    padding-left: 1rem;
+}
+h3 {
+  padding-top: 1rem;
+  font-size: 115%;
+  padding-left: 1rem;
+}
+h4 {
+  padding-top: 1rem;
+  font-size: 100%;
+  padding-left: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #330358;
+}
+hr {
+  height: 1px;
+  background-color: #DFBAFF;
+}
+footer {
+    background-color: #101010;
+    color: white;
+    padding: 1rem;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 150%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+/*img {
+  border-radius: 50%;
+  max-width: 10%;
+  position:relative;
+}
+img:hover {
+  content: url(../images/nicole-icon-color.jpg);
+  transform: scaleX(-1);
+}*/
+strong {
+  font-weight: 600;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  color: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #101010;
+  color: white;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  padding: .5rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  align-content: center;
+  display: flex;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+.topnav a:focus {
+  background-color: #DFBAFF;
+}
+.logo {
+  font-weight: 700;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  color: white;
+  float: left;
+  display: grid;
+  align-content: center;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+.logo a:visited {
+  color: white;
+  text-decoration: none;
+}
+.logo a:hover {
+  color: #DFBAFF;
+}
+
+.portrait {
+  padding-left: 1rem;
+  align-self: center;
+  max-width: 100%;
+  float: right;
+}
+img {
+  margin: 0px;
+  padding: 0px;
+  max-width: 140%;
+}
+img:hover {
+  transform: scaleX(-1);}
+
+  .topnav a.active {
+    background-color: white;
+    color: black;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  a.button:link {
+    color: #330358;
+    border: .1rem solid;
+    border-color: #330358;
+    background-color: #dfbaff46;
+    padding: 10px;
+    font-weight: 600;
+}
+button a:visited{
+color: #330358;
+    border: .1rem solid;
+    border-color: #DFBAFF;
+    background-color: #dfbaff46;
+    padding: 10px;
+    font-weight: 600;
+}
+a.button {
+    border-radius: 12px;
+    line-height: 2.2;
+  }
+/* If the screen size is 800px wide or less, set the font-size of <div> to 4vw */
+@media screen and (max-width: 800px) {
+  .topnav a {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  main {
+    flex-direction: column;
+  }
+  .portrait {
+    max-width: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {
+    position: relative;
+    flex-direction: column;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: -1rem;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    margin-top: 1rem;
+  }
+}
+/*@media screen and (max-width: 600px) {
+  .logo {
+    width: 50%;
+  }
+}
+Responsive layout - makes a one column layout instead of a two-column layout
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-content: left;
+  }
+}*/
